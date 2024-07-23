@@ -218,7 +218,7 @@ C uses a special charactwer '\0' that marks the string end by convention
 Character Arrays need to allocate an extra byte to
 store the line-end character
 */
-
+/*
 int main()
 {
     char x[6];
@@ -239,4 +239,26 @@ int main()
     printf("%s", x);
 
     return 0;
+}
+*/
+
+//////////////////////////////////
+//
+
+// String Length
+int main()
+{
+    char x[] = "Hello";
+    int py_length();
+
+    printf("%s %d", x, py_length(x));
+}
+
+int py_length(self)
+char self[];
+{
+    int i;
+    for (i = 0; self[i]; i++)
+        ;
+    return i;
 }
