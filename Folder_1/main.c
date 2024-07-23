@@ -149,6 +149,8 @@ In C Single Quotyes are a character and double quotes a charatcer array
 In C a character is a byte - a short (typically 8-bit) intwerger
 */
 
+/*
+
 int main()
 {
     char x[3] = "Hi";
@@ -158,10 +160,45 @@ int main()
         'e',
     };
 
-    printf("x %s\n", x);
-    printf("y %s\n", y);
-    printf("%s\n", "Hi");
-    printf("%c%c\n", 'H', 'i');
+printf("x %s\n", x);
+printf("y %s\n", y);
+printf("%s\n", "Hi");
+printf("%c%c\n", 'H', 'i');
+
+return 0;
+}
+*/
+
+///////////////////////////////
+/////////////////////////////
+// Charcter Sets
+/*
+The C char type is just a number - character representationdepend on charcter set
+
+
+Modern charcters including 😊 are represented in multi-byte
+sequences using Unicode and UTF-8 but in 1979 we used ASCII
+ and other chracter sets
+*/
+
+/*
+C can't represent emoji's by iteslef
+*/
+
+// Characters in C are closer to intergers than strings
+
+/*
+int main()
+{
+    printf("%c\n", 65);  // Will print out A
+    printf("%d\n", 'A'); // Will print out 65
+    char num = 'A';
+    printf("%d\n", num + num); // Will print 130 🤯
+
+    char num1 = '<';
+    printf("%c\n", num1 + num1); // Should give us x 🤯
+    // The charcter , ascii code is 60.. 60 + 60 120 = the code of x
 
     return 0;
 }
+*/
