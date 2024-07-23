@@ -246,6 +246,7 @@ int main()
 //
 
 // String Length
+/*
 int main()
 {
     char x[] = "Hello";
@@ -258,7 +259,34 @@ int py_length(self)
 char self[];
 {
     int i;
-    for (i = 0; self[i]; i++)
-        ;
+    for (i = 0; self[i]; i = i + 1)
+    {
+        // IDK if it's wrong but i think the increment is the last thing that happens in a for loop
+        printf("%d \n", i);
+    };
     return i;
+}
+*/
+
+int main()
+{
+    char string[] = "I'm so stressed";
+    printf("%s \n", string);
+    int i;
+    for (i = 0; string[i]; i++)
+    {
+    }
+    char holder[i];
+
+    for (int j = 0; j <= i; j++)
+    {
+
+        holder[j] = string[i - j - 1];
+        if (j == 5)
+            continue;
+    }
+
+    printf("%s \n", holder);
+
+    return 0;
 }
