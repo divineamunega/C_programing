@@ -202,3 +202,41 @@ int main()
     return 0;
 }
 */
+
+////////////////////////////////
+//
+
+// Terminatating a string
+
+/*
+Strings in C are not strings they are chracter arrays
+The size of a 'string' stored in a C array
+is not the length of the array
+
+C uses a special charactwer '\0' that marks the string end by convention
+
+Character Arrays need to allocate an extra byte to
+store the line-end character
+*/
+
+int main()
+{
+    char x[6];
+    x[0] = 'H';
+    x[1] = 'e';
+    x[2] = 'l';
+    x[3] = 'l';
+    x[4] = 'o';
+    x[5] = 'f';
+    x[6] = 'f';
+
+    printf("%s\n", x);
+
+    x[2] = 'L';
+    printf("%s\n", x);
+
+    x[3] = '\0';
+    printf("%s", x);
+
+    return 0;
+}
