@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 // Fisrt C code
 
 /*
@@ -15,7 +14,6 @@ int main() {
 }
 
 */
-
 
 // Int input
 
@@ -34,7 +32,6 @@ int main() {
 }
 
 */
-
 
 // String Input
 
@@ -63,7 +60,6 @@ int main () {
     return 0;
 }
 */
-
 
 // Line Input (SAFE)
 
@@ -96,7 +92,7 @@ int main () {
 }
 */
 
-// Counted Loop from 1 - 4 
+// Counted Loop from 1 - 4
 // int main () {
 //     int i = 0;
 
@@ -105,8 +101,6 @@ int main () {
 //     }
 //     return 0;
 // }
-
-
 
 // I don't understand this
 /*
@@ -129,7 +123,6 @@ int main() {
 
 */
 
-
 // Callijng Functions
 
 /*
@@ -147,7 +140,6 @@ int main() {
 }
  */
 
-
 // Languages like JavaScript PHP Python treat single and double quotes nearly the same. Bothe create String Constants
 
 /*
@@ -155,6 +147,21 @@ In C Single Quotyes are a character and double quotes a charatcer array
 (neither are a string)
 
 In C a character is a byte - a short (typically 8-bit) intwerger
-*/ 
+*/
 
+int main()
+{
+    char x[3] = "Hi";
+    char y[3] = {
+        'H',
+        'i',
+        'e',
+    };
 
+    printf("x %s\n", x);
+    printf("y %s\n", y);
+    printf("%s\n", "Hi");
+    printf("%c%c\n", 'H', 'i');
+
+    return 0;
+}
