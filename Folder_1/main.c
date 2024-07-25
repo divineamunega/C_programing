@@ -320,6 +320,7 @@ return 0;
 
 // Program to print the corresponding celsuis to farenheit
 
+/*
 int main()
 {
     printf("********************** \n Celsius to Farenheit Conversion Table \n");
@@ -339,4 +340,19 @@ int main()
         cels += step;
     }
     return 0;
+}
+*/
+
+/* SYMBOLIC CONSTATSS*/
+
+#define LOWER 0   /* Lower Limit of Table*/
+#define UPPER 300 /* Upper Limit of Table */
+#define STEP 20   /* STEP Size */
+
+int main()
+{
+    for (int farh = LOWER; farh <= UPPER; farh += STEP)
+    {
+        printf("%4d %6.1f \n", farh, (5.0 / 9.0) * (farh - 32));
+    }
 }
