@@ -296,21 +296,47 @@ int main()
 /* print Fahrenheit-Celsius table
 for f = 0, 20, ..., 300 */
 // Understanding the celsuic and farerenheit scale
+/*
 int main()
 {
     int lower, upper, step;
     float fahr, celsius;
-    lower = 0;   /* lower limit of temperature table */
-    upper = 300; /* upper limit */
-    step = 20;   /* step size */
-    fahr = lower;
+    lower = 0;
+upper = 300;
+step = 20;
+fahr = lower;
 
-    while (fahr <= upper)
+while (fahr <= upper)
+{
+    celsius = (5.0 / 9.0) * (fahr - 32.0);
+    printf("%4.0f %6.1f\n", fahr, celsius);
+    fahr = fahr + step;
+}
+
+return 0;
+}
+* /
+*/
+
+// Program to print the corresponding celsuis to farenheit
+
+int main()
+{
+    printf("********************** \n Celsius to Farenheit Conversion Table \n");
+    int lower, upper, step;
+    float cels, fh;
+    lower = 0;
+    upper = 10;
+    step = 1;
+
+    cels = lower;
+
+    printf(" C  F \n");
+    while (cels <= upper)
     {
-        celsius = (5.0 / 9.0) * (fahr - 32.0);
-        printf("%4.0f %6.1f\n", fahr, celsius);
-        fahr = fahr + step;
+        fh = (9.0 / 5.0) * cels + 32;
+        printf("%5.2f  %3.2f \n", cels, fh);
+        cels += step;
     }
-
     return 0;
 }
