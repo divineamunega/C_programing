@@ -270,7 +270,6 @@ char self[];
 
 // Assingment
 
-/*
 int main()
 {
     char string[] = "I'm so stressed";
@@ -290,8 +289,6 @@ int main()
 
     return 0;
 }
-
-*/
 
 /* print Fahrenheit-Celsius table
 for f = 0, 20, ..., 300 */
@@ -327,7 +324,7 @@ int main()
     int lower, upper, step;
     float cels, fh;
     lower = 0;
-    upper = 10;
+    upper = 100000;
     step = 1;
 
     cels = lower;
@@ -345,9 +342,10 @@ int main()
 
 /* SYMBOLIC CONSTATSS*/
 
-#define LOWER 0   /* Lower Limit of Table*/
-#define UPPER 300 /* Upper Limit of Table */
-#define STEP 20   /* STEP Size */
+/*
+#define LOWER 0   //  Lower Limit of Table
+#define UPPER 300 //  Upper Limit of Table
+#define STEP 20   //  STEP Size
 
 int main()
 {
@@ -356,3 +354,11 @@ int main()
         printf("%4d %6.1f \n", farh, (5.0 / 9.0) * (farh - 32));
     }
 }
+* /
+*/
+
+// FILE COPYING
+
+// Given getchar and putchar, you can write a surprising amount of useful code
+// without knowing anything more about I/O. The simplest example is a program
+// which copies its input to its output one character at a time.
