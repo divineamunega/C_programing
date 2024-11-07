@@ -17,3 +17,5 @@ int main(void)
 
     return 0;
 }
+
+// I must learn all the differences between long double, double and floats
